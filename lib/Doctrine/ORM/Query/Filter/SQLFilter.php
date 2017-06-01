@@ -75,7 +75,7 @@ abstract class SQLFilter
             $type = ParameterTypeInferer::inferType($value);
         }
 
-        $this->parameters[$name] = ['value' => $value, 'type' => $type];
+        $this->parameters[$name] = array('value' => $value, 'type' => $type);
 
         // Keep the parameters sorted for the hash
         ksort($this->parameters);
@@ -122,7 +122,7 @@ abstract class SQLFilter
 
         return true;
     }
-
+    
     /**
      * Returns as string representation of the SQLFilter parameters (the state).
      *
@@ -141,6 +141,15 @@ abstract class SQLFilter
     final protected function getConnection()
     {
         return $this->em->getConnection();
+    }
+
+    /**
+     * Custom function to get all parameters
+     * NOTE : Unsafe usage
+     * @return array
+     */
+    final public function getParameters(){
+        return $this->parameters;
     }
 
     /**

@@ -34,6 +34,7 @@ class Join extends Node
     const JOIN_TYPE_LEFT      = 1;
     const JOIN_TYPE_LEFTOUTER = 2;
     const JOIN_TYPE_INNER     = 3;
+    const JOIN_TYPE_RIGHT     = 4;  // right join custom
 
     /**
      * @var int
