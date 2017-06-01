@@ -1,7 +1,7 @@
 {
-    "name": "doctrine/orm",
+    "name": "kentkart/doctrine",
     "type": "library",
-    "description": "Object-Relational-Mapper for PHP",
+    "description": "Doctrine Fork for KentKart",
     "keywords": ["orm", "database"],
     "homepage": "http://www.doctrine-project.org",
     "license": "MIT",
@@ -10,7 +10,8 @@
         {"name": "Roman Borschel", "email": "roman@code-factory.org"},
         {"name": "Benjamin Eberlei", "email": "kontakt@beberlei.de"},
         {"name": "Jonathan Wage", "email": "jonwage@gmail.com"},
-        {"name": "Marco Pivetta", "email": "ocramius@gmail.com"}
+        {"name": "Marco Pivetta", "email": "ocramius@gmail.com"},
+        {"name": "Huseyin Ergon", "email": "huseyin.ergon@kentkart.com.tr"}
     ],
     "minimum-stability": "dev",
     "require": {
